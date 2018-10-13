@@ -1,0 +1,127 @@
+2018-10-13 16:13:18,873 ERROR: Exception on / [GET] [in D:\Programs\Python\Python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\routes.py", line 23, in index
+    posts = current_user.followed_posts().all()
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\models.py", line 58, in followed_posts
+    followers, (followers.c.followed_id == Post.user_id)).filier(
+AttributeError: 'BaseQuery' object has no attribute 'filier'
+2018-10-13 16:13:47,049 INFO: Microblog startup [in D:\PycharmProjects\flask_mega\microblog09\app_name\__init__.py:28]
+2018-10-13 16:13:52,028 ERROR: Exception on / [GET] [in D:\Programs\Python\Python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\routes.py", line 23, in index
+    posts = current_user.followed_posts().all()
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\models.py", line 60, in followed_posts
+    own = Post.query.filter(user_id=self.id)
+TypeError: filter() got an unexpected keyword argument 'user_id'
+2018-10-13 16:13:53,659 ERROR: Exception on / [GET] [in D:\Programs\Python\Python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\routes.py", line 23, in index
+    posts = current_user.followed_posts().all()
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\models.py", line 60, in followed_posts
+    own = Post.query.filter(user_id=self.id)
+TypeError: filter() got an unexpected keyword argument 'user_id'
+2018-10-13 16:13:53,842 ERROR: Exception on / [GET] [in D:\Programs\Python\Python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\routes.py", line 23, in index
+    posts = current_user.followed_posts().all()
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\models.py", line 60, in followed_posts
+    own = Post.query.filter(user_id=self.id)
+TypeError: filter() got an unexpected keyword argument 'user_id'
+2018-10-13 16:13:55,934 ERROR: Exception on / [GET] [in D:\Programs\Python\Python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\routes.py", line 23, in index
+    posts = current_user.followed_posts().all()
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\models.py", line 60, in followed_posts
+    own = Post.query.filter(user_id=self.id)
+TypeError: filter() got an unexpected keyword argument 'user_id'
+2018-10-13 16:19:25,654 ERROR: Exception on /index [GET] [in D:\Programs\Python\Python37\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Programs\Python\Python37\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Programs\Python\Python37\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\routes.py", line 23, in index
+    posts = current_user.followed_posts().all()
+  File "D:\PycharmProjects\flask_mega\microblog09\app_name\models.py", line 60, in followed_posts
+    own = Post.query.filter(user_id=self.id)
+TypeError: filter() got an unexpected keyword argument 'user_id'
