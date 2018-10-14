@@ -5,6 +5,7 @@ from flask import Flask
 from config import Config
 from exts import db
 from flask_login import LoginManager
+from flask_mail import Mail
 
 
 app = Flask(__name__)
@@ -12,6 +13,7 @@ app.config.from_object(Config)
 db.init_app(app)
 login = LoginManager(app)
 login.login_view = 'login'
+mail = Mail(app)
 
 
 if not app.debug:
